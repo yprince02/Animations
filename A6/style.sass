@@ -1,0 +1,89 @@
+// GLOBALS --------------------//
+
+*
+  margin: 0
+  padding: 0
+
+body
+  box-sizing: border-box
+  
+// FONTS --------------------//
+
+/* Open Sans: font-family: 'Open Sans', sans-serif */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')
+
+// COLOURS --------------//
+
+/* Primary */
+$violet: hsl(257, 40%, 49%)
+$white: #fff
+
+// TYPOGRAPHY -----------//
+
+$sans-serif: sans-serif
+$open-sans: 'Open Sans'
+
+$regular: 400
+$bold: 700
+
+button
+  font-family: $open-sans, $sans-serif
+  font-size: 0.9em
+  
+// BUTTON ---------------//
+
+.radius
+  -webkit-border-radius: 100px
+  -moz-border-radius: 100px
+  border-radius: 100px
+
+.shadow
+  -webkit-box-shadow: 0px 5px 20px -10px #000
+  -moz-box-shadow:    0px 5px 20px -10px #000
+  box-shadow:         0px 5px 20px -10px #000
+
+button
+  width: 16rem
+  height: 4rem
+  font-size: 1.4em
+  color: $violet
+  background-color: $white
+  border: none
+  cursor: pointer
+  position: relative
+  overflow: hidden
+  .register-now
+    opacity: 0
+    transform: translate(-100%,0)
+    transition: all 0.3s cubic-bezier(0.94, 0.06, 0.45, 0.95)
+    position: absolute
+    display: block
+    top: 16px
+    left: 0
+    width: 100%
+    
+  .register
+    position: absolute
+    display: block
+    top: 16px
+    width: 100%
+    transition: all 0.3s cubic-bezier(0.94, 0.06, 0.45, 0.95)
+  &:hover
+    .register-now
+      opacity: 1
+      transform: translate(0,0)
+    .register
+      opacity: 0
+      transform: translate(100%,0)
+      
+// BACKGROUND & CENTER ------------------//
+
+.background
+  background-color: $violet
+  height: 100vh
+
+.center
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
