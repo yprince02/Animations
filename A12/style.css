@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
+  height: 100vh;
+  place-items: center;
+  overflow: hidden;
+}
+
+span {
+  --anim-duration: 3.5s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: grow var(--anim-duration) linear 8;
+          animation: grow var(--anim-duration) linear 8;
+  opacity: 0.6;
+}
+
+span:nth-child(7n+1) {
+  color: red;
+}
+
+span:nth-child(7n+2) {
+  color: orange;
+}
+
+span:nth-child(7n+3) {
+  color: yellowgreen;
+}
+
+span:nth-child(7n+4) {
+  color: green;
+}
+
+span:nth-child(7n+5) {
+  color: dodgerblue;
+}
+
+span:nth-child(7n+6) {
+  color: indigo;
+}
+
+span:nth-child(7n+7) {
+  color: violet;
+}
+
+span:nth-child(14n+1) {
+  -webkit-animation-delay: calc(var(--anim-duration) / 14 * 1);
+          animation-delay: calc(var(--anim-duration) / 14 * 1);
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+span:nth-child(14n+2) {
+  -webkit-animation-delay: calc(var(--anim-duration) / 14 * 2);
+          animation-delay: calc(var(--anim-duration) / 14 * 2);
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+span:nth-child(14n+3) {
+  -webkit-animation-delay: calc(var(--anim-duration) / 14 * 3);
+          animation-delay: calc(var(--anim-duration) / 14 * 3);
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+span:nth-child(14n+4) {
+  -webkit-animation-delay: calc(var(--anim-duration) / 14 * 4);
+          animation-delay: calc(var(--anim-duration) / 14 * 4);
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+span:nth-child(14n+5) {
+  -webkit-animation-delay: calc(var(--anim-duration) / 14 * 5);
+          animation-delay: calc(var(--anim-duration) / 14 * 5);
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+span:nth-child(14n+6) {
+  -webkit-animation-delay: calc(var(--anim-duration) / 14 * 6);
+          animation-delay: calc(var(--anim-duration) / 14 * 6);
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+span:nth-child(14n+7) {
+  -webkit-animation-delay: calc(var(--anim-duration) / 14 * 7);
+          animation-delay: calc(var(--anim-duration) / 14 * 7);
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+span:nth-child(14n+8) {
+  -webkit-animation-delay: calc(var(--anim-duration) / 14 * 8);
+          animation-delay: calc(var(--anim-duration) / 14 * 8);
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+span:nth-child(14n+9) {
+  -webkit-animation-delay: calc(var(--anim-duration) / 14 * 9);
+          animation-delay: calc(var(--anim-duration) / 14 * 9);
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+span:nth-child(14n+10) {
+  -webkit-animation-delay: calc(var(--anim-duration) / 14 * 10);
+          animation-delay: calc(var(--anim-duration) / 14 * 10);
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+span:nth-child(14n+11) {
+  -webkit-animation-delay: calc(var(--anim-duration) / 14 * 11);
+          animation-delay: calc(var(--anim-duration) / 14 * 11);
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+span:nth-child(14n+12) {
+  -webkit-animation-delay: calc(var(--anim-duration) / 14 * 12);
+          animation-delay: calc(var(--anim-duration) / 14 * 12);
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+span:nth-child(14n+13) {
+  -webkit-animation-delay: calc(var(--anim-duration) / 14 * 13);
+          animation-delay: calc(var(--anim-duration) / 14 * 13);
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+span:nth-child(14n+14) {
+  -webkit-animation-delay: calc(var(--anim-duration) / 14 * 14);
+          animation-delay: calc(var(--anim-duration) / 14 * 14);
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+@-webkit-keyframes grow {
+  from {
+  }
+  to {
+    -webkit-transform: scale(42);
+            transform: scale(42);
+    opacity: 0.05;
+  }
+}
+
+@keyframes grow {
+  from {
+  }
+  to {
+    -webkit-transform: scale(42);
+            transform: scale(42);
+    opacity: 0.05;
+  }
+}
+/*# sourceMappingURL=style.css.map */
